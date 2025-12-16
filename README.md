@@ -1,51 +1,51 @@
 # 🏓 Canvas Pong Game
 
-یک بازی ساده **Pong** ساخته‌شده با **JavaScript خالص** و **HTML5 Canvas** که در آن بازیکن در برابر کامپیوتر بازی می‌کند. این پروژه بدون هیچ کتابخانه‌ی خارجی پیاده‌سازی شده و برای یادگیری مفاهیم پایه‌ی Canvas، انیمیشن، و منطق بازی بسیار مناسب است.
+A simple **Pong** game built with **vanilla JavaScript** and **HTML5 Canvas** where the player competes against the computer. This project is implemented without any external libraries and is perfect for learning basic Canvas concepts, animation, and game logic.
 
 ---
 
-## 🎮 ویژگی‌ها
+## 🎮 Features
 
-* رندر گرافیک با HTML5 Canvas
-* کنترل پدل بازیکن با حرکت ماوس
-* هوش مصنوعی ساده برای پدل کامپیوتر
-* تنظیم سرعت متفاوت برای موبایل و دسکتاپ
-* سیستم امتیازدهی
-* صفحه Game Over و امکان شروع مجدد بازی
-* افزایش تدریجی سرعت توپ
+* Graphics rendered with HTML5 Canvas
+* Player paddle controlled with mouse movement
+* Simple AI for the computer paddle
+* Different speed settings for mobile and desktop
+* Scoring system
+* Game Over screen with replay option
+* Gradual increase in ball speed
 
 ---
 
-## 🛠️ تکنولوژی‌های استفاده‌شده
+## 🛠️ Technologies Used
 
 * JavaScript (Vanilla)
 * HTML5 Canvas API
-* CSS (حداقلی – برای Game Over)
+* Minimal CSS (for Game Over screen)
 
 ---
 
-## 📂 ساختار کلی پروژه
+## 📂 Project Structure
 
 ```text
 project/
 │
 ├── index.html
-├── script.js   // منطق اصلی بازی
+├── script.js   // Main game logic
 └── README.md
 ```
 
-> کد ارائه‌شده مربوط به فایل `script.js` است.
+> The provided code corresponds to `script.js`.
 
 ---
 
-## 🚀 نحوه اجرا
+## 🚀 How to Run
 
-1. یک فایل `index.html` بسازید
-2. کد JavaScript را در فایل `script.js` قرار دهید
-3. فایل JS را به HTML لینک کنید
-4. فایل `index.html` را در مرورگر اجرا کنید
+1. Create an `index.html` file
+2. Put the JavaScript code in `script.js`
+3. Link the JS file to the HTML
+4. Open `index.html` in your browser
 
-### نمونه HTML ساده:
+### Sample HTML:
 
 ```html
 <!DOCTYPE html>
@@ -72,29 +72,29 @@ project/
 
 ---
 
-## 🕹️ نحوه بازی
+## 🕹️ How to Play
 
-* پدل پایینی متعلق به بازیکن است
-* با **حرکت ماوس**، پدل را کنترل کنید
-* توپ را به سمت پدل کامپیوتر برگردانید
-* اولین کسی که به **۷ امتیاز** برسد برنده است
+* The bottom paddle belongs to the player
+* **Move your mouse** to control the paddle
+* Bounce the ball back toward the computer paddle
+* The first to reach **7 points** wins
 
 ---
 
-## ⚙️ منطق بازی (خلاصه)
+## ⚙️ Game Logic (Summary)
 
-### 🎾 توپ
+### 🎾 Ball
 
-* حرکت عمودی و افقی
-* افزایش سرعت پس از برخورد با پدل
-* تغییر مسیر بر اساس محل برخورد با پدل
+* Moves vertically and horizontally
+* Speed increases after hitting a paddle
+* Direction changes based on where it hits the paddle
 
-### 🧠 هوش مصنوعی کامپیوتر
+### 🧠 Computer AI
 
-* دنبال کردن موقعیت توپ روی محور X
-* افزایش سرعت با بالا رفتن سرعت بازی
+* Follows the ball's X position
+* Speeds up as the game progresses
 
-### 📱 پشتیبانی موبایل
+### 📱 Mobile Support
 
 ```js
 if (isMobile.matches) {
@@ -108,32 +108,26 @@ if (isMobile.matches) {
 
 ## 🔁 Game Over
 
-* وقتی یکی از بازیکنان به امتیاز ۷ برسد
-* نمایش برنده
-* دکمه **Play Again** برای شروع مجدد
+* Triggers when a player reaches 7 points
+* Displays the winner
+* **Play Again** button to restart the game
 
 ---
 
-## ✨ ایده‌هایی برای توسعه
+## ✨ Ideas for Improvement
 
-* اضافه‌کردن صدا (Sound Effects)
-* پشتیبانی از لمس (Touch) برای موبایل
-* حالت دو نفره (Multiplayer)
-* انتخاب درجه سختی
-* بهبود UI و انیمیشن‌ها
-
----
-
-## 📜 لایسنس
-
-این پروژه آزاد است و می‌توانید برای یادگیری، تمرین یا توسعه شخصی از آن استفاده کنید.
+* Add sound effects
+* Touch support for mobile
+* Two-player mode
+* Difficulty selection
+* Enhanced UI and animations
 
 ---
 
-### 👨‍💻 ساخته‌شده برای تمرین و آموزش Canvas و Game Logic
+## 📜 License
 
-اگر دوست داری، می‌تونم:
+This project is free to use for learning, practice, or personal development.
 
-* README رو انگلیسی کنم
-* نسخه حرفه‌ای‌تر بنویسم
-* یا بازی رو ارتقا بدم 😄
+---
+
+### 👨‍💻 Made for learning and practicing Canvas and game logic
